@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@mail.ru",
+      "password": "12345678",
+      "name": "Михаил"
+    },
+    {
+      "id": 2,
+      "email": "1@mail.ru",
+      "password": "12345678",
+      "name": "Михаил"
+    },
+    {
+      "id": 3,
+      "email": "anna@mail.ru",
+      "password": "00112233",
+      "name": "Анна"
+    },
+    {
+      "email": "kobets526@gmail.com",
+      "password": "11111111",
+      "name": "Анна",
+      "id": 4
+    }
+  
+  ]
+}

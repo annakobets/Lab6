@@ -1,0 +1,35 @@
+
+
+  <div class="header container">
+    <div class="row">
+    <div class="header-block header-block-nav col-lg-8">
+        <ul>
+            <li routerLinkActive=”active>
+                <a [routerLink]="['/system', 'main']">Главная</a>
+            </li>
+            <li routerLinkActive=”active>
+                <a [routerLink]="['/system', 'recipes']">Рецепты</a>
+            </li>
+            <li routerLinkActive=”active>
+                <a [routerLink]="['/system', 'personal-account']">Личный кабинет</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-block header-block-nav col-lg-4">
+      <ul class="nav-profile">
+        <li class="profile dropdown" appDirective>
+          <a class="nav-link dropdown-toggle" role="button">
+                                  <span class="name">
+                                  Здравствуйте,  {{user.name}}
+                                  </span>
+          </a>
+          <div class="dropdown-menu profile-dropdown-menu">
+            <a class="dropdown-item"  [routerLink]="['/system', 'newrecipe']"> <i class="fa fa-gear icon"></i>Сделать запись</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="onLogout()"><i class="fa fa-power-off icon"></i>Выйти</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
