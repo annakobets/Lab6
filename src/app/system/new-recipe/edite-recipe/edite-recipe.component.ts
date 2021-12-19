@@ -27,15 +27,15 @@ export class EditeRecipeComponent implements OnInit {
   
 
   onSubmit(form: NgForm) {
-    const {name, date, description} = form.value;
-  
-    const record = new Record(name, date, description, +this.currentRecordId);
-  
-    this.recordService.updateRecord(record)
-      .subscribe((data: Record) => {
-        this.onRecordEdit.emit(data);
-        console.log('Категория успешно отредактирована.');
-      });
-  }
+  const {name, date, description} = form.value;
+
+  const record = new Record(name, date, description, +this.currentRecordId);
+
+  this.recordService.updateRecord(record)
+    .subscribe((data: Record) => {    //Ни одна перегрузка не соответствует этому вызову
+      this.onRecordEdit.emit(data);
+      console.log('Категория успешно отредактирована.');
+    });
+}
 
 }
