@@ -10,6 +10,10 @@ import { FooterComponent } from '../shared/component/footer/footer.component';
 import { HeaderComponent } from '../shared/component/header/header.component';
 import { DropdownDirective } from '../shared/directive/dropdown.directive';
 import { NewRecipeComponent } from './new-recipe/new-recipe.component';
+import { AddRecipeComponent } from './new-recipe/add-recipe/add-recipe.component';
+import { EditeRecipeComponent } from './new-recipe/edite-recipe/edite-recipe.component';
+import { Record } from './shared/record.model';
+import { RecordService } from './shared/record.service';
 
 
 
@@ -22,13 +26,20 @@ import { NewRecipeComponent } from './new-recipe/new-recipe.component';
     FooterComponent,
     HeaderComponent,
     DropdownDirective,
-    NewRecipeComponent
+    NewRecipeComponent,
+    AddRecipeComponent,
+    EditeRecipeComponent,
+
   ],
   imports: [
     CommonModule,
     SystemRoutingModule, 
     SharedModule
     
+  ],
+  providers:
+  [
+    RecordService
   ]
 })
 export class SystemModule { }

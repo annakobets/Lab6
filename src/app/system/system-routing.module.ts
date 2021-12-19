@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
+import { NewRecipeComponent } from './new-recipe/new-recipe.component';
 import { PersonalAccountComponent } from './personal-account/personal-account.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { SystemComponent } from './system.component';
@@ -24,6 +25,10 @@ const routes: Routes =
       {
           path: 'personal-account',
           component: PersonalAccountComponent
+      },
+      {
+        path: 'newrecipe',
+        component: NewRecipeComponent
       }
 
     ]

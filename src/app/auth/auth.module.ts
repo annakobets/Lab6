@@ -8,6 +8,7 @@ import { RegistrationComponent } from './registration/registration.component';
 
 import { AuthRoutingModule } from './auth-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { UsersService } from '../shared/services/users.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,6 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule
 
   ],
-  providers: [],
+  providers: [UsersService],
 })
 export class AuthModule { }

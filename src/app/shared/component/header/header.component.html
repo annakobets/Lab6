@@ -13,12 +13,15 @@
             <li routerLinkActive=”active>
                 <a [routerLink]="['/system', 'personal-account']">Личный кабинет</a>
             </li>
+            <li routerLinkActive=”active>
+                <a [routerLink]="['/system', 'newrecipe']">Новый рецепт</a>
+            </li>
         </ul>
     </div>
     <div class="header-block header-block-nav col-lg-4">
       <ul class="nav-profile">
         <li class="profile dropdown" appDirective>
-          <a class="nav-link dropdown-toggle" role="button">
+          <a class="nav-link dropdown-toggle" href="#" role="button">
                                   <span class="name">
                                   Здравствуйте,  {{user.name}}
                                   </span>
