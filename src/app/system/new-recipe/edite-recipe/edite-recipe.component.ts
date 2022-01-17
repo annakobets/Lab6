@@ -1,7 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Record } from '../../shared/record.model';
-import { RecordService } from '../../shared/record.service';
+import { Message } from 'src/app/shared/models/message';
+import { Record } from '../../../shared/models/record.model';
+import { RecordService } from '../../../shared/services/record.service';
 
 @Component({
   selector: 'app-edite-recipe',
@@ -15,11 +16,15 @@ export class EditeRecipeComponent implements OnInit {
 
   currentRecordId = 1;
   currentRecord: Record | undefined;
+  message!: Message;
   
   constructor(private recordService: RecordService) { }
-  ngOnInit() {
+
+   ngOnInit() {
+    this.message = new Message('success', '');
     this.onRecordChange();
   }
+
   onRecordChange() {
     this.currentRecord = this.records
       .find(c => c.id === +this.currentRecordId);
@@ -32,9 +37,10 @@ export class EditeRecipeComponent implements OnInit {
   const record = new Record(name, date, description, +this.currentRecordId);
 
   this.recordService.updateRecord(record)
-    .subscribe((data: Record) => {    //Ни одна перегрузка не соответствует этому вызову
+    .subscribe((data: Record) => {    
       this.onRecordEdit.emit(data);
-      console.log('Категория успешно отредактирована.');
+        this.message.text = 'Пост успешно отредактирован';
+        window.setTimeout(() => this.message.text = '', 5000);
     });
 }
 

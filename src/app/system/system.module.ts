@@ -12,8 +12,10 @@ import { DropdownDirective } from '../shared/directive/dropdown.directive';
 import { NewRecipeComponent } from './new-recipe/new-recipe.component';
 import { AddRecipeComponent } from './new-recipe/add-recipe/add-recipe.component';
 import { EditeRecipeComponent } from './new-recipe/edite-recipe/edite-recipe.component';
-import { Record } from './shared/record.model';
-import { RecordService } from './shared/record.service';
+import { Record } from '../shared/models/record.model';
+import { RecordService } from '../shared/services/record.service';
+import { AddComponent } from './add/add.component';
+import { EditComponent } from './edit/edit.component';
 
 
 
@@ -29,6 +31,8 @@ import { RecordService } from './shared/record.service';
     NewRecipeComponent,
     AddRecipeComponent,
     EditeRecipeComponent,
+    AddComponent,
+    EditComponent,
 
   ],
   imports: [

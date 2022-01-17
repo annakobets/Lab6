@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RecordService } from '../shared/record.service';
-import {Record} from '../shared/record.model';
+import { RecordService } from '../../shared/services/record.service';
+import {Record} from '../../shared/models/record.model';
 
 
 @Component({

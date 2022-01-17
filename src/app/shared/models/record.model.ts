@@ -1,4 +1,7 @@
 export class Record {
+    static of(data: Object): any {
+      throw new Error('Method not implemented.');
+    }
     constructor(
       public name: string,
       public date: string,

@@ -23,11 +23,15 @@
       "password": "11111111",
       "name": "Анна",
       "id": 4
+    },
+    {
+      "email": "cvrdkj@mail.ru",
+      "password": "86421111",
+      "name": "sdfggg",
+      "id": 5
     }
-  
   ],
-  "records":
-  [
+  "records": [
     {
       "name": "Название поста",
       "date": "0012-12-12",

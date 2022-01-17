@@ -1,7 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Record} from '../shared/record.model'
+import {Record} from '../models/record.model'
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable()
 export class RecordService {
@@ -15,7 +16,8 @@ export class RecordService {
     return this.http.get<Record[]>('http://localhost:3000/record');
   }
 
-  updateRecord(data: Record, ) {
-    return this.http.put(`http://localhost:3000/record/${data.id}`, data);
+  updateRecord(data: Record) {
+    return this.http.put(`http://localhost:3000/record/${data.id}`, data)
+    .pipe(map((data)=> Record.of(data)));
   }
 }
