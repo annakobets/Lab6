@@ -1,1 +1,29 @@
-<p>personal-account works!</p>
+<div class="section">
+    <div class="container">
+      <div class="title">Профиль</div>
+      <div class="block">
+        <div class="block-txt">
+          <div class="txt">
+            <div class="key">Ф.И.О</div>
+            <div class="value">{{user.name}}</div>
+          </div>
+          <div class="line"></div>
+          <div class="txt">
+            <div class="key">Email</div>
+            <div class="value">{{user.email}}</div>
+          </div>
+          <div class="line"></div>
+          <div class="txt">
+            <div class="key">Пароль</div>
+            <div class="value">{{user.password}}</div>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="delete">
+            <button class="btn default" type="submit">
+              <div class="formtext" (click)="delete()">Удалить аккаунт</div>
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>

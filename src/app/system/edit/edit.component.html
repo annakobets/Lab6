@@ -1,1 +1,37 @@
-<p>edit works!</p>
+<div class="section">
+    <div class="container">
+      <div class="text">Изменение информации пользователя</div>
+      <div class="block-block">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+          <div class="block">
+            <div class="form-group" [ngClass]="{'has-error': email.invalid && email.touched}">
+              <div class="login-txt">Email</div>
+              <input type="text" class="form-control" placeholder="Введите новый email" ngModel name="email" #email="ngModel" required [ngModel]="currentUser.email">
+              <span class="form-help-text" *ngIf="email.invalid && email.touched">
+                  <span class="notice">Поле обязательно для заполнения</span>
+              </span>
+              <div class="line"></div>
+            </div>
+            <div class="form-group" [ngClass]="{'has-error': password.invalid && password.touched}">
+              <div class="input-group">
+                <div class="login-txt">Пароль</div>
+                <input type="text" class="form-control" placeholder="Придумайте новый пароль" ngModel name="password" #password="ngModel" required [ngModel]="currentUser.password">
+              </div>
+              <span class="form-help-text" *ngIf="password.invalid && password.touched">
+                <span class="notice">Поле обязательно для заполнения</span>
+              </span>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="block-two">
+            <div class="edit">
+              <button class="btn default" type="submit" [disabled]="f.invalid">
+                <div class="formtext">Изменить</div>
+              </button>
+            </div>
+          </div>
+      </form>
+      <div class="alert alert-{{message.type}}" *ngIf="message.text">{{message.text}}</div>
+    </div>
+  </div>
+  

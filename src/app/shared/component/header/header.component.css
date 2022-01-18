@@ -1,0 +1,129 @@
+.section {
+    width: 100%;
+    height: 80px;
+    background: var(--steel-color);
+    background-color: rgb(0, 76, 190);
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+  }
+  .title-block {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .title {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 33px;
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+  }
+  .name {
+    font-family: MontserratMedium;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .name:hover {
+    color: var(--blush-color);
+  }
+  .dropdown-menu.profile-dropdown-menu {
+    position: absolute;
+    display: none;
+    font-size: 10px;
+  }
+  .open .dropdown-menu.profile-dropdown-menu {
+    display: block;
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 100px;
+  }
+  
+  a {
+    font-family: MontserratMedium;
+    font-style: normal;
+    cursor: pointer;
+    line-height: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  a:hover {
+    color: var(--blush-color);
+  }
+  .active {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  .active:hover {
+    border-bottom: 1px solid var(--blush-color);
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: 5px;
+    margin-left: 115px;
+    font-size: 20px;
+  }
+
+  .dropdown-item {
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    color: black;
+  }
+  .dropdown-item:hover {
+    background: #2175be;
+  }
+  /* ul {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    float: left;
+    padding: 30px;
+  }
+  
+  .header .row {
+    justify-content: center;
+    align-items: center;
+  }
+  .header li {
+    list-style: none;
+    display: inline;
+    padding: 0 20px;
+    color: #ffffff;
+  }
+  .header li a{
+    color: #ffffff;
+  }
+  body ul {
+    margin-bottom: 0;
+  }
+  header{
+    background: #0b40ff;
+    font-size: 20px;
+    color:#ffffff;
+    height: 100px;
+    padding-top: 13px;
+  }
+  header .nav-link {
+    display: inline;
+  }  */
+  
+
+  
+  

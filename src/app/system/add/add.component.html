@@ -1,1 +1,79 @@
-<p>add works!</p>
+
+  <div class="section">
+    <div class="login-block">
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div
+            class="form-group"
+            [ngClass]="{'has-error': form.get('name')?.invalid && form.get('name')?.touched}"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock ti-unlock"></i></span>
+              <input
+                type="name"
+                class="form-control"
+                placeholder="Название"
+                formControlName="name"
+              >
+            </div>
+            <span
+              class="form-help-text"
+              *ngIf="form.get('name')?.invalid && form.get('name')?.touched"
+            >
+              <span *ngIf="form.get('name')?.errors?.required">Поле не может быть пустым. </span>
+          </span>
+          </div>
+    
+    
+          <div
+            class="form-group"
+            [ngClass]="{'has-error': form.get('date')?.invalid && form.get('date')?.touched}"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock ti-unlock"></i></span>
+              <input
+                type="date"
+                class="form-control"
+                placeholder="date"
+                formControlName="date"
+              >
+            </div>
+            <span
+              class="form-help-text"
+              *ngIf="form.get('date')?.invalid && form.get('date')?.touched"
+            >
+              <span *ngIf="form.get('date')?.errors?.required">Поле не может быть пустым. </span>
+          </span>
+          </div>
+          
+    
+          <div
+            class="form-group"
+            [ngClass]="{'has-error': form.get('description')?.invalid && form.get('description')?.touched}"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock ti-unlock"></i></span>
+              <input
+                type="name"
+                class="form-control"
+                placeholder="Описание"
+                formControlName="description"
+              >
+            </div>
+            <span
+              class="form-help-text"
+              *ngIf="form.get('description')?.invalid && form.get('description')?.touched"
+            >
+              <span *ngIf="form.get('description')?.errors?.required">Поле не может быть пустым. </span>
+          </span>
+          </div>
+          
+          <button
+            class="btn btn-primary btn-block"
+            type="submit"
+            [disabled]="form.invalid"
+          >
+          Создать</button>
+        </form>
+      </div>
+  </div>

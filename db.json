@@ -1,22 +1,10 @@
 {
   "users": [
     {
-      "id": 1,
-      "email": "admin@mail.ru",
-      "password": "12345678",
-      "name": "Михаил"
-    },
-    {
       "id": 2,
       "email": "1@mail.ru",
       "password": "12345678",
       "name": "Михаил"
-    },
-    {
-      "id": 3,
-      "email": "anna@mail.ru",
-      "password": "00112233",
-      "name": "Анна"
     },
     {
       "email": "kobets526@gmail.com",
@@ -25,18 +13,43 @@
       "id": 4
     },
     {
-      "email": "cvrdkj@mail.ru",
-      "password": "86421111",
-      "name": "sdfggg",
+      "email": "anna@mail.ru",
+      "password": "12345678",
+      "name": "anna",
       "id": 5
     }
   ],
   "records": [
     {
       "name": "Название поста",
+      "author": "Михаил",
       "date": "0012-12-12",
       "description": "Текст поста",
       "id": 1
+    },
+    {
+      "name": "ererge",
+      "date": "2022-01-09",
+      "description": "rgergerg",
+      "id": 2
+    },
+    {
+      "name": "eeeeeee",
+      "date": "2022-01-28",
+      "description": "sdasdasd",
+      "id": 3
+    },
+    {
+      "name": "gdfgdfggfdg",
+      "date": "2022-01-06",
+      "description": "fdgdfgdfgf",
+      "id": 4
+    },
+    {
+      "name": "gdfgdfggfdg",
+      "date": "2022-01-06",
+      "description": "fdgdfgdfgf",
+      "id": 5
     }
   ]
 }

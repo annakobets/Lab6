@@ -132,7 +132,7 @@ input:focus {
   color: red;
 }
 
-ul {
+/* ul {
   overflow: hidden;
   margin: 0 auto;
   width: 80%;
@@ -164,27 +164,10 @@ header{
   background: #0b40ff;
   font-size: 20px;
   color:#ffffff;
-  height: 60px;
+  height: 100px;
   padding-top: 13px;
 }
 header .nav-link {
   display: inline;
-}
+} */
 
-.open .dropdown-menu.profile-dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu.profile-dropdown-menu a {
-  color: #000;
-  padding: 15px;
-  cursor: pointer;
-}
-.dropdown-menu.profile-dropdown-menu {
-  width: 80%;
-  padding: 0;
-  margin-left: 35px;
-}
-.dropdown-divider {
-  margin: 0;
-}

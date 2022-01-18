@@ -9,13 +9,11 @@ import { SharedModule } from '../shared/shared.module';
 import { FooterComponent } from '../shared/component/footer/footer.component';
 import { HeaderComponent } from '../shared/component/header/header.component';
 import { DropdownDirective } from '../shared/directive/dropdown.directive';
-import { NewRecipeComponent } from './new-recipe/new-recipe.component';
-import { AddRecipeComponent } from './new-recipe/add-recipe/add-recipe.component';
-import { EditeRecipeComponent } from './new-recipe/edite-recipe/edite-recipe.component';
 import { Record } from '../shared/models/record.model';
 import { RecordService } from '../shared/services/record.service';
 import { AddComponent } from './add/add.component';
 import { EditComponent } from './edit/edit.component';
+import { EditService } from '../shared/services/edit.service';
 
 
 
@@ -28,9 +26,6 @@ import { EditComponent } from './edit/edit.component';
     FooterComponent,
     HeaderComponent,
     DropdownDirective,
-    NewRecipeComponent,
-    AddRecipeComponent,
-    EditeRecipeComponent,
     AddComponent,
     EditComponent,
 
@@ -43,7 +38,8 @@ import { EditComponent } from './edit/edit.component';
   ],
   providers:
   [
-    RecordService
+    RecordService,
+    EditService
   ]
 })
 export class SystemModule { }

@@ -1,0 +1,130 @@
+.section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #DDA288;
+  }
+  .container {
+    position: absolute;
+    margin-left: 375px;
+    padding-top: 34px;
+  }
+  .text {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 60px;
+    color: var(--steel-color);
+  }
+  .block-block {
+    width: 350px;
+    height: 400px;
+    background: rgba(126, 103, 94, 0.62);
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .block {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    width: 250px;
+    padding-top: 75px;
+  }
+  .block-two {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 290px;
+  }
+  .block div {
+    position: relative;
+  }
+  .block div input {
+    background: transparent;
+    border: none;
+    border-bottom: 0px solid #fff;
+    outline: none;
+    letter-spacing: 1px;
+    margin-top: 17px;
+    margin-bottom: 2px;
+    padding: 10px 0;
+    width: 270px;
+    margin-left: 5px;
+  }
+  input {
+    font-size:20px;
+    color: white;
+  }
+  .login-txt {
+    font-family: MontserratMedium;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 13px;
+    color: white;
+    position:absolute;
+    float: left;
+  }
+  .form-control {
+    color: white;
+  }
+  .line {
+    position: absolute;
+    width: 285px;
+    height: 2px;
+    background: #CCCCCC;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .notice {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+    font-weight: bold;
+    color: #811010;
+  }
+  .alert {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:17px;
+    font-weight: bold;
+    color: #811010;
+    padding-top: 10px;
+    padding-left: 55px;
+    margin-top: 5px;
+  }
+  .edit, .delete {
+    position: relative;
+    width: 193px;
+    height: 40px;
+    background: #504544;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 11px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    height: 14px;
+  }
+  .btn:hover {
+    background: rgba(216, 216, 216, 0.664);
+    color: #645756;
+  }
+  .default {
+    color: #FFFFFF;
+    width: 193px;
+    height: 40px;
+  }
+  ::placeholder {
+    color: white;
+    opacity: 1;
+    font-family: MontserratMedium;
+  }
+  

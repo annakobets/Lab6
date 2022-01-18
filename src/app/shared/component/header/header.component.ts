@@ -10,6 +10,24 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  links = [
+    {
+      title: 'Главная',
+      link: 'main',
+    },
+    {
+      title: 'Рецепты',
+      link: 'recipes',
+    },
+    {
+      title: 'Создать рецепт',
+      link: 'add',
+    },
+    {
+      title: 'Профиль',
+      link: 'personal-account',
+    },
+  ];
   user!: User;
   constructor(private authService: AuthService,
     private router: Router) { }
@@ -20,5 +38,9 @@ export class HeaderComponent implements OnInit {
   onLogout() {
     this.authService.logout();
     this.router.navigate(['/login']);
+  }
+  isCurrentLink(link: string)
+  {
+    return this.router.url.includes(link);
   }
 }

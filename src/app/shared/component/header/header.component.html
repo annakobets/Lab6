@@ -1,4 +1,4 @@
-<div class="header container">
+<!-- <div class="header container">
   <div class="row">
     <div class="header-block header-block-nav col-lg-8">
       <ul>
@@ -12,7 +12,7 @@
           <a [routerLink]="['/system', 'personal-account']">Личный кабинет</a>
         </li>
         <li routerLinkActive=”active>
-          <a [routerLink]="['/system', 'newrecipe']">Новый рецепт</a>
+          <a [routerLink]="['/system', 'add']">Создать рецепт</a>
         </li>
       </ul>
     </div>
@@ -32,6 +32,34 @@
           </div>
         </li>
       </ul>
+    </div>
+  </div>
+</div> -->
+
+<div class="section">
+  <div class="main-container container">
+    <div class="title-block">
+      <div class="title">Recipes</div>
+    </div>
+    <div class="links">
+      <a
+        *ngFor="let link of links"
+        [routerLink]="['/system', link.link]"
+        [class.active]="isCurrentLink(link.link)"
+        >{{ link.title }}</a
+      >
+    </div>
+    <div class="profile dropdown" appDirective>
+      <a class="nav-link dropdown-toggle" role="button">
+        <span class="name"> Здравствуйте, {{ user.name }} </span>
+      </a>
+      <div class="dropdown-menu profile-dropdown-menu">
+        <a class="dropdown-item" [routerLink]="['/system', 'edit']">
+          <i></i>Изменить профиль</a
+        >
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" (click)="onLogout()"><i></i>Выйти</a>
+      </div>
     </div>
   </div>
 </div>

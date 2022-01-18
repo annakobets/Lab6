@@ -1,0 +1,10 @@
+.section
+{
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+    background-image: url("https://e2.edimdoma.ru/data/posts/0002/3033/23033-ed4_wide.jpg?1631188650");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
